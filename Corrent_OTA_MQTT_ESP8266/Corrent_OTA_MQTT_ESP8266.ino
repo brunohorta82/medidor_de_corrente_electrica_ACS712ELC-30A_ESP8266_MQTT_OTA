@@ -48,7 +48,7 @@ bool OTABegin = false;
 int sensorValueAux = 0;
 float valorSensor = 0;
 float valorCorrente = 0;
-float voltsporUnidade = 0.004887586;// 5%1023
+float voltsporUnidade = 0.004887586;// 5%1023 //ADC de 5V para o ESP é necessário fazer circuito extra
 // Consultar o datasheet do ACS712
 float sensibilidade = 0.066;
 
