@@ -107,8 +107,6 @@ for(int i=10000; i>0; i--){
     sensorValueAux = (analogRead(SENSOR) -511.5); 
     // Soma dos quadrados das leituras
     valorSensor += pow(sensorValueAux,2); 
-    //Delay para evitar overflow
-  //  delay(1);
     //Importante para não perder a ligação ao Broker MQTT durante as leituras
     client.loop();
   }
